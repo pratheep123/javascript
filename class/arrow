@@ -1,0 +1,5 @@
+var y=()=>console.log("hello")
+y()
+
+var s=(a,b)=>a*b;
+console.log(s(1,2));
