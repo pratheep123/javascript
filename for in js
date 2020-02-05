@@ -1,0 +1,5 @@
+var car=["BMW","AUDI","BENZ","RR","jaguar"];
+car.forEach(function(item,index,array){
+    console.log("Brand name is"+array);
+    console.log("car"+item+"position"+index);
+})
