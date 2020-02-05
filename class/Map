@@ -1,0 +1,5 @@
+var num=[20,53,36,93,187,38,15];
+var divisible=num.map(function(mar){
+    return mar-(mar*10/100);
+})
+console.log(divisible);
