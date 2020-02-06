@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<body>
+    <button><img src="https://restcountries.eu/data/afg.svg" width="40" data-num=0 height="30" id="img1" onclick=af()></button> 
+    <button><img src="https://restcountries.eu/data/ala.svg" width="40" data-num=1 height="30" id="img2" onclick=ala()></button> 
+    <button><img src="https://restcountries.eu/data/alb.svg" width="40" data-num=2 height="30" id="img3" onclick=alb()></button> 
+    <button><img src="https://restcountries.eu/data/dza.svg" width="40" data-num=3 height="30" id="img4" onclick=dza()></button> 
+    <button><img src="https://restcountries.eu/data/and.svg" width="40" data-num=4 height="30" id="img5" onclick=and()></button> 
+    <button><img src="https://restcountries.eu/data/ago.svg" width="40" data-num=5 height="30" id="img6" onclick=ago()></button> 
+    <button><img src="https://restcountries.eu/data/aia.svg" width="40" data-num=6 height="30" id="img7" onclick=aia()></button> 
+    <button><img src="https://restcountries.eu/data/ata.svg" width="40" data-num=7 height="30" id="img8" onclick=ata()></button> 
+    <button><img src="https://restcountries.eu/data/arg.svg" width="40" data-num=8 height="30" id="img9" onclick=arg()></button> 
+    <button><img src="https://restcountries.eu/data/arm.svg" width="40" data-num=9 height="30" id="img10" onclick=arm()></button> 
+    <button><img src="https://restcountries.eu/data/abw.svg" width="40" data-num=10 height="30" id="img11" onclick=abw()></button> 
+    <button><img src="https://restcountries.eu/data/aus.svg" width="40" data-num=11 height="30" id="img12" onclick=aus()></button> 
+    <button><img src="https://restcountries.eu/data/aut.svg" width="40" data-num=12 height="30" id="img13" onclick=aut()></button> 
+    <button><img src="https://restcountries.eu/data/aze.svg" width="40" data-num=13 height="30" id="img14" onclick=aze()></button> 
+    <button><img src="https://restcountries.eu/data/bhr.svg" width="40" data-num=14 height="30" id="img15" onclick=bhr()></button> 
+    <button><img src="https://restcountries.eu/data/bgd.svg" width="40" data-num=15 height="30" id="img16" onclick=bhd()></button> 
+    <button><img src="https://restcountries.eu/data/brb.svg" width="40" data-num=16 height="30" id="img17" onclick=brb()></button> 
+    <button><img src="https://restcountries.eu/data/blz.svg" width="40" data-num=17 height="30" id="img18" onclick=blz()></button> 
+    <button><img src="https://restcountries.eu/data/bmu.svg" width="40" data-num=18 height="30" id="img19" onclick=bmu()></button> 
+    <button><img src="https://restcountries.eu/data/btn.svg" width="40" data-num=19 height="30" id="img20" onclick=btn()></button> 
+     
+<script>
+    data1={};
+    fetch('https://restcountries.eu/rest/v2/all')
+    .then(response => {
+    return response.json();
+    })
+    .then((data)=>{
+     data1=data;
+     data2=data;  
+     data3=data;  
+     data4=data;  
+     data5=data;  
+     data6=data;  
+     data7=data;  
+     data8=data;  
+     data9=data;
+     data10=data; 
+     data11=data;
+     data12=data;  
+     data13=data;  
+     data14=data;  
+     data15=data;  
+     data16=data;  
+     data17=data;  
+     data18=data;  
+     data19=data;
+     data20=data;   
+ })
+
+    function af(){
+      data1=data1[document.getElementById("img1").dataset.num]
+      console.log(data1);
+    document.write(data1['name']+"<br>"+data1['region']+"<br>"+data1['alpha2Code']+"<br>"+data1['region']+"<br>"+data1['borders'])
+
+    }
+    function ala(){
+      data2=data2[document.getElementById("img2").dataset.num]
+      console.log(data2);
+    document.write(data2['name']+"<br>"+data2['region']+"<br>"+data2['alpha2Code']+"<br>"+data2['region']+"<br>"+data2['borders'])
+
+    }
+    function alb(){
+      data3=data3[document.getElementById("img3").dataset.num]
+      console.log(data3);
+    document.write(data3['name']+"<br>"+data3['region']+"<br>"+data3['alpha2Code']+"<br>"+data3['region']+"<br>"+data3['borders'])
+
+    }
+    function dza(){
+      data4=data4[document.getElementById("img4").dataset.num]
+      console.log(data4);
+    document.write(data4['name']+"<br>"+data4['region']+"<br>"+data4['alpha2Code']+"<br>"+data4['region']+"<br>"+data4['borders'])
+
+    }
+    function and(){
+      data5=data5[document.getElementById("img4").dataset.num]
+      console.log(data5);
+    document.write(data5['name']+"<br>"+data5['region']+"<br>"+data5['alpha2Code']+"<br>"+data5['region']+"<br>"+data5['borders'])
+
+    }
+    function ago(){
+      data6=data6[document.getElementById("img4").dataset.num]
+      console.log(data6);
+    document.write(data6['name']+"<br>"+data6['region']+"<br>"+data6['alpha2Code']+"<br>"+data6['region']+"<br>"+data6['borders'])
+
+    }
+    function aia(){
+      data7=data7[document.getElementById("img4").dataset.num]
+      console.log(data7);
+    document.write(data7['name']+"<br>"+data7['region']+"<br>"+data7['alpha2Code']+"<br>"+data7['region']+"<br>"+data7['borders'])
+
+    }
+    function ata(){
+      data8=data8[document.getElementById("img4").dataset.num]
+      console.log(data8);
+    document.write(data8['name']+"<br>"+data8['region']+"<br>"+data8['alpha2Code']+"<br>"+data8['region']+"<br>"+data8['borders'])
+
+    }
+    function arg(){
+      data9=data9[document.getElementById("img4").dataset.num]
+      console.log(data9);
+    document.write(data9['name']+"<br>"+data9['region']+"<br>"+data9['alpha2Code']+"<br>"+data9['region']+"<br>"+data9['borders'])
+
+    }
+    function arm(){
+      data10=data10[document.getElementById("img4").dataset.num]
+      console.log(data10);
+    document.write(data10['name']+"<br>"+data10['region']+"<br>"+data10['alpha2Code']+"<br>"+data10['region']+"<br>"+data10['borders'])
+
+    }
+    function aus(){
+      data11=data11[document.getElementById("img1").dataset.num]
+      console.log(data11);
+    document.write(data11['name']+"<br>"+data11['region']+"<br>"+data11['alpha2Code']+"<br>"+data11['region']+"<br>"+data11['borders'])
+
+    }
+    function aut(){
+      data12=data12[document.getElementById("img2").dataset.num]
+      console.log(data12);
+    document.write(data12['name']+"<br>"+data12['region']+"<br>"+data12['alpha2Code']+"<br>"+data12['region']+"<br>"+data12['borders'])
+
+    }
+    function aze(){
+      data13=data13[document.getElementById("img3").dataset.num]
+      console.log(data13);
+    document.write(data13['name']+"<br>"+data13['region']+"<br>"+data13['alpha2Code']+"<br>"+data13['region']+"<br>"+data13['borders'])
+
+    }
+    function bhr(){
+      data14=data14[document.getElementById("img4").dataset.num]
+      console.log(data14);
+    document.write(data14['name']+"<br>"+data14['region']+"<br>"+data14['alpha2Code']+"<br>"+data14['region']+"<br>"+data14['borders'])
+
+    }
+    function bhd(){
+      data15=data15[document.getElementById("img4").dataset.num]
+      console.log(data15);
+    document.write(data15['name']+"<br>"+data15['region']+"<br>"+data15['alpha2Code']+"<br>"+data15['region']+"<br>"+data15['borders'])
+
+    }
+    function brb(){
+      data16=data16[document.getElementById("img4").dataset.num]
+      console.log(data16);
+    document.write(data16['name']+"<br>"+data16['region']+"<br>"+data16['alpha2Code']+"<br>"+data16['region']+"<br>"+data16['borders'])
+
+    }
+    function blz(){
+      data17=data17[document.getElementById("img4").dataset.num]
+      console.log(data17);
+    document.write(data17['name']+"<br>"+data17['region']+"<br>"+data17['alpha2Code']+"<br>"+data17['region']+"<br>"+data17['borders'])
+
+    }
+    function bmu(){
+      data18=data18[document.getElementById("img4").dataset.num]
+      console.log(data18);
+    document.write(data18['name']+"<br>"+data18['region']+"<br>"+data18['alpha2Code']+"<br>"+data18['region']+"<br>"+data18['borders'])
+
+    }
+    function btn(){
+      data19=data19[document.getElementById("img4").dataset.num]
+      console.log(data19);
+    document.write(data19['name']+"<br>"+data19['region']+"<br>"+data19['alpha2Code']+"<br>"+data19['region']+"<br>"+data19['borders'])
+
+    }
+    
+</script>
+</body>
+</html>
