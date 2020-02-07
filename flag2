@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+</head>
+<style> 
+ div{
+  border: 10px groove royalblue;
+  margin:100px;
+  padding:100px 200px 100px 200px;
+  background-color: lightblue;
+  }
+</style>
+<body>
+  <h1><center><u>FLAGS</u></center></h1>
+  <div>
+    <img src="https://restcountries.eu/data/afg.svg" width="120"  height="60"  onclick=func(0)>
+    <img src="https://restcountries.eu/data/ala.svg" width="120"  height="60"  onclick=func(1)>
+    <img src="https://restcountries.eu/data/alb.svg" width="120"  height="60"  onclick=func(2)> 
+    <img src="https://restcountries.eu/data/dza.svg" width="120"  height="60"  onclick=func(3)> 
+    <img src="https://restcountries.eu/data/and.svg" width="120"  height="60"  onclick=func(4)> 
+    <img src="https://restcountries.eu/data/ago.svg" width="120"  height="60"  onclick=func(5)> 
+    <img src="https://restcountries.eu/data/aia.svg" width="120"  height="60"  onclick=func(6)>
+    <img src="https://restcountries.eu/data/ata.svg" width="120"  height="60"  onclick=func(7)>
+    <img src="https://restcountries.eu/data/arg.svg" width="120"  height="60"  onclick=func(8)>
+    <img src="https://restcountries.eu/data/arm.svg" width="120"  height="60"  onclick=func(9)>  
+    <img src="https://restcountries.eu/data/abw.svg" width="120"  height="60"  onclick=func(10)>
+    <img src="https://restcountries.eu/data/aus.svg" width="120"  height="60"  onclick=func(11)> 
+    <img src="https://restcountries.eu/data/aut.svg" width="120"  height="60"  onclick=func(12)>
+    <img src="https://restcountries.eu/data/aze.svg" width="120"  height="60"  onclick=func(13)>
+    <img src="https://restcountries.eu/data/bhr.svg" width="120"  height="60"  onclick=func(14)> 
+    <img src="https://restcountries.eu/data/bgd.svg" width="120"  height="60"  onclick=func(15)> 
+    <img src="https://restcountries.eu/data/brb.svg" width="120"  height="60"  onclick=func(16)>
+    <img src="https://restcountries.eu/data/blz.svg" width="120"  height="60"  onclick=func(17)>  
+    <img src="https://restcountries.eu/data/bmu.svg" width="120"  height="60"  onclick=func(18)> 
+    <img src="https://restcountries.eu/data/btn.svg" width="120"  height="60"  onclick=func(19)>
+     </div>
+<script>
+  function func(s){
+    fetch("https://restcountries.eu/rest/v2/all")
+    .then(flag=>flag.json())
+    .then(flag1=>{
+      var a=flag1[s]
+      document.write("Name="+a["name"]+"<br>"+"alpha2Code="+a["alpha2Code"]+"<br>"+"Region="+a["Region"]+"<br>"+"Capital="+a["capital"]+"<br>"+"Borders="+a["borders"])
+    console.log(flag1);
+  })
+} 
+</script>
+</body>
+</html>
